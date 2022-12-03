@@ -17,24 +17,9 @@ public class MainFrame extends JFrame implements ActionListener {
 	MainFrame() {
 		super("Questions 1");
 		
-		buttonYellow = new JButton();
-		buttonYellow.setText("Yellow");
-		buttonYellow.setBounds(20, 25, 70, 50);
-		buttonYellow.setFont(new Font("Comic Sans", Font.BOLD, 11));
-		buttonYellow.setBorder(BorderFactory.createLineBorder(Color.yellow));
-		
-		buttonGreen = new JButton();
-		buttonGreen.setText("Green");
-		buttonGreen.setBounds(105, 25, 70, 50);
-		buttonGreen.setFont(new Font("Comic Sans", Font.BOLD, 11));
-		buttonGreen.setBorder(BorderFactory.createLineBorder(Color.green));
-		
-		buttonBlue= new JButton();
-		buttonBlue.setText("Blue");
-		buttonBlue.setBounds(190, 25, 70, 50);
-		buttonBlue.setFont(new Font("Comic Sans", Font.BOLD, 11));
-		buttonBlue.setBorder(BorderFactory.createLineBorder(Color.blue));
-		
+		buttonYellow = new MyButton(Color.yellow, 20, 25);
+		buttonGreen = new MyButton(Color.green, 105, 25);
+		buttonBlue = new MyButton(Color.blue, 190, 25);
 		
 		buttonYellow.addActionListener(this);
 		buttonGreen.addActionListener(this);
